@@ -11,8 +11,8 @@
     "prepublish": "npm run lint && npm test && npm run clean && npm run build",
     "test": "babel-node test/index.js | tap-spec"
   },
-  "repository": "Aftonbladet/redux-api-middleware",
-  "homepage": "https://github.com/Aftonbladet/redux-api-middleware",
+  "repository": "pierrebleroux/redux-api-middleware",
+  "homepage": "https://github.com/pierrebleroux/redux-api-middleware",
   "keywords": [
     "redux",
     "api",

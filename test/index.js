@@ -692,6 +692,18 @@ test('ApiError', (t) => {
   t.end();
 });
 
+test('Valid RSAA', (t) => {
+  t.deepEqual(validateRSAA({
+    [CALL_API]: {
+      endpoint: '',
+      method: 'GET',
+      types: ['a', 'b', 'c']
+    },
+    type: ''
+  }), [], 'Accepts the "type" parameter as part of an RSAA');
+  t.end();
+});
+
 test('getJSON', async (t) => {
   const res1 = {
     headers: {
